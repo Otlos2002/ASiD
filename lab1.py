@@ -44,7 +44,7 @@ def foo4(arg1, arg2):
 def foo7(list):
     return tuple(list)
 
-print(foo7([1,'w',1,5,5,3,'gff']))
+# print(foo7([1,'w',1,5,5,3,'gff']))
 
 #zad8
 def foo8():
@@ -54,10 +54,27 @@ def foo8():
     return tuple(lista)
 
 # print(foo8())
-def foo8(arg : int):
+
+#zad9
+def foo9(arg : int):
     dni =['Pon', 'wt','sr','czw','pt','sob','niedziela']
     return dni[arg-1]
-print(foo8(4))
+# print(foo9(4))
+#zad9
+
+#zad10
+def foo10(s):
+    return s == s[::-1]
+
+
+s = "malayalam"
+ans = foo10(s)
+
+if ans:
+    print("Yes")
+else:
+    print("No")
+
 
 
 
