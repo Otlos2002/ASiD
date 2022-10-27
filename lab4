@@ -1,0 +1,67 @@
+def numbers(n: int):
+    if n < 0:
+        return
+    print(f'i: {n}')
+
+    numbers(n - 1)
+
+def fib(n:int) -> int:
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+def power(number: int, n: int) ->int:
+    # if n == 0:
+    #     return 1
+    # return number * power(number,n-1)
+    if n < 0:
+        number = 1/ number
+        n = -n
+    elif n == 0:
+        return 1
+    return number * power(number, n-1)
+
+def reverse(s) ->str:
+    if len(s) == 0:
+        return s
+    else:
+        return reverse(s[1:]) + s[0]
+
+def factorial(n: int) ->int:
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+def prime(n: int, i=2) -> bool:
+
+    if (n<=2):
+        return True if(n==2) else False
+    if(n % i ==0):
+        return False
+    if(i * i > n):
+        return True
+    return prime(n, i+1)
+
+def remove_duplicates(txt: str) ->str:
+
+
+
+
+
+
+
+
+print(fib(9))
+print(power(2,-2))
+print(reverse('murder'))
+print(factorial(5))
+print(prime(20))
+print(prime(11))
+
+
+
+
+
+
+
+
